@@ -1,0 +1,431 @@
+.footer{
+
+    margin-top:80px;
+
+    background:#0f172a;
+
+    color:#ffffff;
+
+    overflow:hidden;
+
+}
+
+/* ===================================
+   CONTAINER
+=================================== */
+
+.footer-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:70px 50px 55px;
+
+    display:grid;
+
+    grid-template-columns:1.4fr 1fr 1fr 1.1fr;
+
+    gap:60px;
+
+}
+
+/* ===================================
+   BRAND
+=================================== */
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:24px;
+
+}
+
+.footer-logo-icon{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:16px;
+
+    background:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.footer-logo h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.footer-logo span{
+
+    color:#2563eb;
+
+}
+
+.footer-brand p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+    max-width:320px;
+
+}
+
+/* ===================================
+   TRUST CARD
+=================================== */
+
+.footer-trust-card{
+
+    margin-top:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:22px;
+
+}
+
+.footer-stars{
+
+    color:#fbbf24;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+    letter-spacing:2px;
+
+}
+
+.footer-trust-users{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.footer-user-group{
+
+    display:flex;
+
+}
+
+.footer-user-group span{
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:50%;
+
+    background:#94a3b8;
+
+    border:3px solid #0f172a;
+
+    margin-left:-10px;
+
+}
+
+.footer-user-group span:first-child{
+
+    margin-left:0;
+
+}
+
+.footer-trust-users p{
+
+    margin:0;
+
+    color:#e2e8f0;
+
+    font-size:15px;
+
+}
+
+/* ===================================
+   COLUMN
+=================================== */
+
+.footer-column h3{
+
+    font-size:18px;
+
+    margin-bottom:24px;
+
+}
+
+.footer-column a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+    margin-bottom:18px;
+
+    transition:.25s;
+
+    font-size:16px;
+
+}
+
+.footer-column a:hover{
+
+    color:#ffffff;
+
+    transform:translateX(4px);
+
+}
+
+.footer-column svg{
+
+    font-size:20px;
+
+    color:#cbd5e1;
+
+}
+
+/* ===================================
+   CONTACT
+=================================== */
+
+.footer-contact{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:32px;
+
+}
+
+.footer-contact p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#cbd5e1;
+
+    line-height:1.6;
+
+}
+
+.footer-contact svg{
+
+    flex-shrink:0;
+
+}
+
+.footer-column h4{
+
+    font-size:18px;
+
+    margin-bottom:18px;
+
+}
+
+/* ===================================
+   SOCIAL
+=================================== */
+
+.footer-social{
+
+    display:flex;
+
+    gap:16px;
+
+}
+
+.footer-social a{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    margin:0;
+
+    transition:.25s;
+
+}
+
+.footer-social a:hover{
+
+    background:#2563eb;
+
+    border-color:#2563eb;
+
+    transform:translateY(-3px);
+
+}
+
+.footer-social svg{
+
+    color:#ffffff;
+
+    font-size:24px;
+
+}
+
+/* ===================================
+   BOTTOM
+=================================== */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:28px 50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.footer-bottom p{
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+}
+
+.footer-tech{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+}
+
+.footer-tech span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.footer-heart{
+
+    color:#ef4444;
+
+    font-size:20px;
+
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:1100px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+padding:55px 24px;
+
+gap:45px;
+
+}
+
+.footer-bottom{
+
+padding:24px;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.footer-logo h2{
+
+font-size:24px;
+
+}
+
+}

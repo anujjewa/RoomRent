@@ -1,0 +1,390 @@
+/* =========================================================
+   OWNER ROOM MANAGEMENT CARD
+========================================================= */
+
+.owner-listing-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.owner-listing-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #cbd5e1;
+
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.owner-listing-image {
+  position: relative;
+
+  width: 100%;
+  height: 175px;
+
+  overflow: hidden;
+
+  background: #f1f5f9;
+}
+
+.owner-listing-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.35s ease;
+}
+
+.owner-listing-card:hover
+.owner-listing-image img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.owner-listing-status {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 10px;
+
+  background: rgba(240, 253, 244, 0.96);
+
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+
+  color: #16a34a;
+
+  font-size: 11px;
+  line-height: 1;
+
+  font-weight: 700;
+
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.owner-listing-content {
+  padding: 15px;
+}
+
+.owner-listing-content h3 {
+  margin: 0 0 8px;
+
+  color: #0f172a;
+
+  font-size: 18px;
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  letter-spacing: -0.2px;
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.owner-listing-location {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 14px;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.owner-listing-location svg {
+  flex-shrink: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.owner-listing-price {
+  margin-bottom: 15px;
+
+  color: #2563eb;
+
+  font-size: 21px;
+  line-height: 1;
+
+  font-weight: 750;
+}
+
+.owner-listing-price span {
+  margin-left: 4px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   ROOM SPECS
+========================================================= */
+
+.owner-listing-specs {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 14px;
+}
+
+.owner-listing-specs div {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+.owner-listing-specs svg {
+  flex-shrink: 0;
+
+  color: #475569;
+
+  font-size: 13px;
+}
+
+/* =========================================================
+   VIEWS
+========================================================= */
+
+.owner-listing-views {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 10px;
+
+  color: #475569;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.owner-listing-views svg {
+  flex-shrink: 0;
+
+  color: #2563eb;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.owner-listing-date {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding-top: 13px;
+
+  border-top: 1px solid #f1f5f9;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.owner-listing-date svg {
+  flex-shrink: 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.owner-listing-actions {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 7px;
+
+  margin-top: 14px;
+}
+
+.owner-listing-actions a,
+.owner-listing-actions button {
+  min-width: 0;
+  min-height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding: 8px 7px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  line-height: 1;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.owner-listing-actions svg {
+  flex-shrink: 0;
+
+  font-size: 13px;
+}
+
+
+/* VIEW */
+
+.owner-listing-view {
+  color: #2563eb;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+}
+
+.owner-listing-view:hover {
+  background: #eff6ff;
+
+  border-color: #bfdbfe;
+}
+
+
+/* EDIT */
+
+.owner-listing-edit {
+  color: #15803d;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+}
+
+.owner-listing-edit:hover {
+  background: #f0fdf4;
+
+  border-color: #bbf7d0;
+}
+
+
+/* DELETE */
+
+.owner-listing-delete {
+  color: #dc2626;
+
+  background: #fffafa;
+
+  border: 1px solid #fee2e2;
+}
+
+.owner-listing-delete:hover {
+  background: #fef2f2;
+
+  border-color: #fecaca;
+}
+
+.owner-listing-actions a:active,
+.owner-listing-actions button:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .owner-listing-image {
+    height: 210px;
+  }
+
+  .owner-listing-content {
+    padding: 17px;
+  }
+
+  .owner-listing-content h3 {
+    font-size: 19px;
+  }
+
+  .owner-listing-specs {
+    flex-wrap: wrap;
+  }
+
+}

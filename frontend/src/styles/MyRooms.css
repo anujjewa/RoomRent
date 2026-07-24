@@ -1,0 +1,374 @@
+.my-rooms-page{
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+    padding:20px;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.my-rooms-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:20px;
+
+}
+
+.my-rooms-top h1{
+
+    font-size:42px;
+
+    color:#0f172a;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.my-rooms-top p{
+
+    color:#64748b;
+
+    font-size:16px;
+
+}
+
+.add-room-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:14px 22px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.add-room-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+   STATS
+=========================== */
+
+.my-room-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    margin-bottom:35px;
+
+}
+
+.stats-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.05);
+
+}
+
+.stats-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.stats-icon.blue{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.stats-icon.green{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+}
+
+.stats-icon.purple{
+
+    background:#ede9fe;
+
+    color:#7c3aed;
+
+}
+
+.stats-card span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.stats-card h2{
+
+    margin-top:5px;
+
+    font-size:30px;
+
+    color:#0f172a;
+
+}
+
+
+/* ===========================
+   GRID
+=========================== */
+.my-rooms-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
+
+gap:22px;
+
+align-items:start;
+
+}
+
+@media (max-width: 1300px) {
+  .my-rooms-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .my-rooms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .my-rooms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===========================
+   EMPTY STATE
+=========================== */
+
+.my-rooms-empty{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:70px 30px;
+
+    text-align:center;
+
+    border:1px solid #e5e7eb;
+
+}
+
+.my-rooms-empty h2{
+
+    font-size:34px;
+
+    margin-bottom:12px;
+
+    color:#0f172a;
+
+}
+
+.my-rooms-empty p{
+
+    color:#64748b;
+
+    margin-bottom:25px;
+
+}
+
+.empty-add-btn{
+
+    display:inline-block;
+
+    padding:14px 24px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+.empty-add-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ===========================
+   BOTTOM CARD
+=========================== */
+
+.my-room-bottom-card{
+
+    margin-top:40px;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+}
+
+.my-room-bottom-card h3{
+
+    margin-bottom:12px;
+
+    font-size:26px;
+
+}
+
+.my-room-bottom-card p{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    opacity:.95;
+
+}
+
+
+/* ===========================
+   LOADING
+=========================== */
+
+.my-rooms-loading{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:950px){
+
+.my-room-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.my-rooms-top{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.my-rooms-page{
+
+padding:15px;
+
+}
+
+.my-rooms-top h1{
+
+font-size:34px;
+
+}
+
+.stats-card{
+
+padding:18px;
+
+}
+
+}

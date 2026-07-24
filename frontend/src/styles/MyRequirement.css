@@ -1,0 +1,589 @@
+/* =========================================================
+   MY REQUIREMENT PAGE
+========================================================= */
+
+.my-requirement-page{
+
+    width:min(1200px,calc(100% - 48px));
+
+    margin:34px auto 60px;
+
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.listing-header{
+
+    margin-bottom:28px;
+
+}
+
+.listing-header h1{
+
+    margin:0;
+
+    color:#0f172a;
+
+    font-size:34px;
+
+    font-weight:750;
+
+    letter-spacing:-.6px;
+
+}
+
+.listing-subtitle{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.profile-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-bottom:24px;
+
+}
+
+.stat-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:14px;
+
+    box-shadow:0 4px 14px rgba(15,23,42,.05);
+
+}
+
+.stat-card svg{
+
+    width:46px;
+    height:46px;
+
+    padding:11px;
+
+    border-radius:12px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    flex-shrink:0;
+
+}
+
+.stat-card span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:12px;
+
+}
+
+.stat-card strong{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#0f172a;
+
+    font-size:21px;
+
+}
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.partner-card{
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:32px;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.06);
+
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.partner-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:16px;
+
+}
+
+.partner-image img{
+
+    width:100%;
+
+    height:470px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .35s ease;
+
+}
+
+.partner-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.verified-badge{
+
+    position:absolute;
+
+    top:14px;
+
+    left:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:6px 12px;
+
+    background:#ffffff;
+
+    border-radius:999px;
+
+    color:#2563eb;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    box-shadow:0 6px 16px rgba(15,23,42,.12);
+
+}
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.partner-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.profile-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.profile-title h2{
+
+    margin:0;
+
+    font-size:30px;
+
+    color:#0f172a;
+
+}
+
+.profile-title svg{
+
+    color:#2563eb;
+
+    font-size:22px;
+
+}
+
+.profile-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin:10px 0 28px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.profile-meta span{
+
+    color:#cbd5e1;
+
+}
+
+/* =========================================================
+   INFO GRID
+========================================================= */
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:24px;
+
+}
+
+.profile-grid div{
+
+    padding:16px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:12px;
+
+}
+
+.profile-grid span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:12px;
+
+    margin-bottom:6px;
+
+}
+
+.profile-grid strong{
+
+    color:#0f172a;
+
+    font-size:15px;
+
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.description-box{
+
+    padding:20px;
+
+    margin-bottom:24px;
+
+    background:#f8fbff;
+
+    border:1px solid #dbeafe;
+
+    border-radius:14px;
+
+}
+
+.description-box h3{
+
+    margin:0 0 12px;
+
+    color:#0f172a;
+
+}
+
+.description-box p{
+
+    margin:0;
+
+    color:#475569;
+
+    line-height:1.8;
+
+    font-size:14px;
+
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.listing-buttons{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.edit-btn,
+.delete-btn{
+
+    min-height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:0 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:650;
+
+    transition:.25s;
+
+}
+
+.edit-btn{
+
+    color:#ffffff;
+
+    background:#2563eb;
+
+}
+
+.edit-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+.delete-btn{
+
+    color:#ffffff;
+
+    background:#ef4444;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty-listing{
+
+    min-height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.empty-card{
+
+    width:520px;
+
+    padding:52px;
+
+    text-align:center;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+}
+
+.empty-icon{
+
+    font-size:68px;
+
+    margin-bottom:20px;
+
+}
+
+.empty-card h2{
+
+    margin:0;
+
+    font-size:34px;
+
+    color:#0f172a;
+
+}
+
+.empty-card p{
+
+    margin:16px 0 34px;
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+.create-listing-btn{
+
+    min-height:48px;
+
+    padding:0 28px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:650;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.create-listing-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+.partner-card{
+
+grid-template-columns:1fr;
+
+}
+
+.partner-image img{
+
+height:340px;
+
+}
+
+.profile-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.listing-buttons{
+
+flex-direction:column;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.my-requirement-page{
+
+width:min(100% - 24px,1200px);
+
+}
+
+.listing-header h1{
+
+font-size:28px;
+
+}
+
+.partner-card{
+
+padding:18px;
+
+}
+
+.partner-image img{
+
+height:260px;
+
+}
+
+}

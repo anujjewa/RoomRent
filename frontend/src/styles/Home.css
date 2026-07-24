@@ -1,0 +1,1593 @@
+.home-page{
+    min-height:100vh;
+    background:#ffffff;
+    color:#0f172a;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.home-hero{
+    min-height:560px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    background:
+        linear-gradient(
+            90deg,
+            #eff6ff 0%,
+            #f8fbff 48%,
+            #ffffff 100%
+        );
+
+    overflow:hidden;
+}
+
+.hero-content{
+    padding:76px 40px 70px 8vw;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    position:relative;
+    z-index:2;
+}
+
+.hero-trust-badge{
+    width:max-content;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    padding:8px 14px;
+
+    background:rgba(255,255,255,.8);
+
+    border:1px solid #dbeafe;
+    border-radius:999px;
+
+    color:#334155;
+
+    font-size:14px;
+    font-weight:500;
+
+    margin-bottom:24px;
+}
+
+.hero-trust-badge svg{
+    color:#16a34a;
+    font-size:17px;
+}
+
+.hero-content h1{
+    max-width:680px;
+
+    font-size:58px;
+    line-height:1.12;
+
+    letter-spacing:-1.8px;
+
+    font-weight:800;
+
+    color:#0f172a;
+
+    margin-bottom:24px;
+}
+
+.hero-content h1 span{
+    color:#2563eb;
+}
+
+.hero-description{
+    max-width:600px;
+
+    color:#64748b;
+
+    font-size:18px;
+    line-height:1.75;
+
+    margin-bottom:32px;
+}
+
+.hero-actions{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn{
+    min-width:155px;
+    height:50px;
+
+    padding:0 24px;
+
+    border-radius:9px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.25s ease;
+}
+
+.hero-primary-btn{
+    background:#2563eb;
+    color:#ffffff;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.18);
+}
+
+.hero-primary-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.hero-secondary-btn{
+    background:#ffffff;
+    color:#2563eb;
+
+    border:1px solid #2563eb;
+}
+
+.hero-secondary-btn:hover{
+    background:#eff6ff;
+    transform:translateY(-2px);
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-visual{
+    min-height:560px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:55px;
+
+    position:relative;
+}
+
+
+.hero-image-wrapper{
+    width:100%;
+    max-width:650px;
+    height:460px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 30px 70px rgba(15,23,42,.16);
+
+    position:relative;
+}
+
+.hero-room-image{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:transform .5s ease;
+}
+
+.hero-image-wrapper:hover .hero-room-image{
+    transform:scale(1.025);
+}
+
+
+/* =========================
+   FEATURE STRIP
+========================= */
+
+.home-features{
+    max-width:1280px;
+
+    margin:0 auto;
+
+    padding:54px 32px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:32px;
+}
+
+.home-feature-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.home-feature-icon{
+    width:58px;
+    height:58px;
+
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+    color:#2563eb;
+
+    font-size:24px;
+}
+
+.home-feature-item h3{
+    font-size:17px;
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:6px;
+}
+
+.home-feature-item p{
+    color:#64748b;
+
+    font-size:14px;
+    line-height:1.6;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .hero-content{
+        padding-left:50px;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+    .hero-visual{
+        padding:35px;
+    }
+
+    .home-features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .home-hero{
+        grid-template-columns:1fr;
+        min-height:auto;
+    }
+
+    .hero-content{
+        order:1;
+        padding:40px 20px 24px;
+        text-align:center;
+        align-items:center;
+    }
+
+    .hero-trust-badge{
+        margin-bottom:18px;
+    }
+
+    .hero-content h1{
+        max-width:100%;
+        font-size:34px;
+        line-height:1.2;
+        letter-spacing:-1px;
+        margin-bottom:18px;
+    }
+
+    .hero-description{
+        max-width:100%;
+        font-size:15px;
+        line-height:1.7;
+        margin-bottom:24px;
+    }
+
+    .hero-actions{
+        width:100%;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn{
+        flex:1;
+        min-width:140px;
+    }
+
+    .hero-visual{
+        order:2;
+        min-height:auto;
+        padding:0 20px 35px;
+    }
+
+    .hero-image-wrapper{
+        width:100%;
+        height:auto;
+        aspect-ratio:16/10;
+        border-radius:20px;
+    }
+
+    .hero-room-image{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .hero-content{
+        padding:32px 16px 20px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .hero-description{
+        font-size:14px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+    }
+
+    .hero-primary-btn,
+    .hero-secondary-btn{
+        width:100%;
+    }
+
+    .hero-image-wrapper{
+        aspect-ratio:4/3;
+    }
+
+}
+/* =========================
+   HOME ROOM SEARCH
+========================= */
+
+.home-search-section {
+  position: relative;
+  z-index: 10;
+
+  max-width: 1450px;
+  margin: -38px auto 0;
+  padding: 0 70px;
+}
+
+.home-search-bar {
+  width: 100%;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  padding: 24px 28px;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 170px;
+  gap: 22px;
+  align-items: end;
+
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+}
+
+.home-search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.home-search-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.home-search-field input,
+.home-search-field select {
+  width: 100%;
+  height: 50px;
+
+  padding: 0 16px;
+
+  border: 1px solid #dbe2ea;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  font-size: 15px;
+  color: #111827;
+
+  outline: none;
+
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.home-search-field input::placeholder {
+  color: #94a3b8;
+}
+
+.home-search-field input:focus,
+.home-search-field select:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.home-search-btn {
+  height: 50px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease,
+              transform 0.2s ease;
+}
+
+.home-search-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   RESPONSIVE SEARCH
+========================= */
+
+@media (max-width: 1100px) {
+  .home-search-section {
+    padding: 0 35px;
+  }
+
+  .home-search-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-search-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-search-section {
+    margin-top: 0;
+    padding: 25px 20px;
+  }
+
+  .home-search-bar {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    gap: 18px;
+  }
+}
+
+/* =========================
+   POPULAR ROOMS
+========================= */
+
+.popular-rooms-section {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 55px 70px 25px;
+}
+
+.popular-rooms-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.popular-rooms-header h2 {
+  margin: 0 0 7px;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+.popular-rooms-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.view-all-rooms {
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.view-all-rooms:hover {
+  text-decoration: underline;
+}
+
+.popular-rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.popular-rooms-grid .room-card {
+  width: 100%;
+  min-width: 0;
+}
+
+.popular-rooms-empty {
+  padding: 50px 25px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.popular-rooms-empty h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+}
+
+.popular-rooms-empty p {
+  margin: 0;
+  color: #64748b;
+}
+
+@media (max-width: 1200px) {
+  .popular-rooms-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .popular-rooms-section {
+    padding: 40px 20px 55px;
+  }
+
+  .popular-rooms-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .popular-rooms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   PARTNER CTA SECTION
+========================================================= */
+
+.partner-cta-section{
+
+    max-width:1450px;
+
+    margin:30px auto 0;
+
+    padding:70px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    background:#ffffff;
+
+}
+
+.partner-cta-content h2{
+
+    font-size:46px;
+
+    line-height:1.18;
+
+    color:#0f172a;
+
+    margin:18px 0 22px;
+
+    letter-spacing:-1px;
+
+    font-weight:800;
+
+}
+
+.partner-cta-content p{
+
+    max-width:560px;
+
+    color:#64748b;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:34px;
+
+}
+
+.partner-cta-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.partner-cta-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:36px;
+
+}
+
+.partner-cta-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#334155;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+.partner-cta-features svg{
+
+    color:#16a34a;
+
+    font-size:20px;
+
+    flex-shrink:0;
+
+}
+
+.partner-cta-button{
+
+    width:max-content;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 34px;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.partner-cta-button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+.partner-cta-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.partner-cta-image img{
+
+    width:100%;
+
+    max-width:600px;
+
+    display:block;
+
+}
+
+@media(max-width:992px){
+
+    .partner-cta-section{
+
+        grid-template-columns:1fr;
+
+        padding:55px 30px;
+
+        gap:40px;
+
+        text-align:center;
+
+    }
+
+    .partner-cta-content p{
+
+        max-width:none;
+
+    }
+
+    .partner-cta-features{
+
+        align-items:center;
+
+    }
+
+    .partner-cta-button{
+
+        margin:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .partner-cta-section{
+
+        padding:45px 20px;
+
+    }
+
+    .partner-cta-content h2{
+
+        font-size:34px;
+
+    }
+
+    .partner-cta-content p{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+/* =========================================================
+   HOW ROOMRENT WORKS
+========================================================= */
+
+.how-section{
+
+    max-width:1450px;
+
+    margin:20px auto 0;
+
+    padding:55px 70px;
+
+    background:#f8fafc;
+
+    border-radius:28px;
+
+}
+
+.how-header{
+
+    text-align:center;
+
+    max-width:720px;
+
+    margin:0 auto 45px;
+
+}
+
+.how-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.how-header h2{
+
+   margin:14px 0 12px;
+font-size:42px;
+
+    line-height:1.15;
+
+    color:#0f172a;
+
+    letter-spacing:-1px;
+
+    font-weight:800;
+
+}
+
+.how-header p{
+
+    color:#64748b;
+
+  font-size:16px;
+line-height:1.6;
+
+}
+
+/* ========================= */
+
+.how-timeline{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+padding-top:20px;
+}
+
+.how-line{
+
+    position:absolute;
+
+    top:42px;
+
+    left:16.5%;
+
+    width:67%;
+
+    height:3px;
+
+    background:#3b82f6;
+
+    opacity:.25;
+
+    border-radius:999px;
+
+    z-index:0;
+
+}
+/* ========================= */
+
+.how-card{
+
+    position:relative;
+
+    z-index:2;
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+   padding:24px 24px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 8px 28px rgba(15,23,42,.05);
+
+    margin-top:28px;
+
+position:relative;
+
+}
+
+.how-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.10);
+
+    border-color:#bfdbfe;
+
+}
+
+/* ========================= */
+
+.how-circle{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin:-50px auto 18px;
+
+    border:6px solid #f8fafc;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.18);
+
+}
+
+
+.how-card:hover .how-circle{
+
+    transform:scale(1.08);
+
+}
+
+
+.how-icon{
+
+    width:74px;
+height:74px;
+
+margin:0 auto 18px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:#eff6ff;
+
+color:#2563eb;
+
+font-size:34px;
+
+}
+
+.how-card h3{
+
+    margin-bottom:10px;
+
+    color:#0f172a;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.how-card p{
+
+    color:#64748b;
+
+   font-size:15px;
+line-height:1.65;
+
+}
+
+/* ========================= */
+
+@media(max-width:992px){
+
+.how-section{
+
+padding:60px 30px;
+
+}
+
+.how-header{
+
+margin-bottom:50px;
+
+}
+
+.how-header h2{
+
+font-size:38px;
+
+}
+
+.how-timeline{
+
+grid-template-columns:1fr;
+
+gap:26px;
+
+}
+
+.how-line{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.how-section{
+
+padding:50px 20px;
+
+}
+
+.how-header h2{
+
+font-size:32px;
+
+}
+
+.how-header p{
+
+font-size:16px;
+
+}
+
+.how-card{
+
+padding:30px 22px;
+
+}
+
+.how-icon{
+
+font-size:48px;
+
+}
+
+}
+
+
+
+/* =========================================================
+   WHY CHOOSE ROOMRENT
+========================================================= */
+
+.why-section{
+
+    max-width:1450px;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.why-header{
+
+    text-align:center;
+
+    max-width:720px;
+
+    margin:0 auto 35px;
+
+}
+
+.why-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.why-header h2{
+
+    margin:18px 0 14px;
+
+    font-size:36px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+    color:#0f172a;
+
+}
+
+.why-header p{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/* ========================= */
+
+.why-grid{
+
+    display:grid;
+
+grid-template-columns:repeat(2,1fr);
+    gap:18px;
+
+}
+
+.why-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#bfdbfe;
+
+    box-shadow:0 18px 45px rgba(15,23,42,.10);
+
+}
+
+.why-icon{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+}
+
+.why-card h3{
+
+    margin-bottom:12px;
+
+    color:#0f172a;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.why-card p{
+
+    color:#64748b;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+/* ========================= */
+
+@media(max-width:992px){
+
+.why-section{
+
+padding:55px 30px;
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-section{
+
+padding:45px 20px;
+
+}
+
+.why-header h2{
+
+font-size:34px;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.why-card{
+
+padding:28px 24px;
+
+}
+
+.why-icon{
+
+width:64px;
+
+height:64px;
+
+font-size:26px;
+
+}
+
+}
+
+
+
+
+/* =========================================================
+   FAQ SECTION
+========================================================= */
+
+.faq-section{
+
+    max-width:100%;
+
+margin:0;
+
+padding:0;
+
+}
+
+.faq-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.faq-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.faq-header h2{
+
+    margin:18px 0 14px;
+
+    font-size:36px;
+
+    line-height:1.2;
+
+    color:#0f172a;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+.faq-header p{
+
+    color:#64748b;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+/* ========================= */
+
+.faq-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.faq-item{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 8px 22px rgba(15,23,42,.05);
+
+}
+
+.faq-item:hover{
+
+    border-color:#bfdbfe;
+
+    box-shadow:0 18px 40px rgba(15,23,42,.08);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    padding:20px 22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    cursor:pointer;
+
+    text-align:left;
+
+}
+
+.faq-question span{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#0f172a;
+
+}
+
+.faq-question svg{
+
+    flex-shrink:0;
+
+    font-size:22px;
+
+    color:#2563eb;
+
+    transition:.3s;
+
+}
+
+/* ========================= */
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer.show{
+
+    max-height:220px;
+
+}
+
+.faq-answer p{
+
+    padding:0 28px 24px;
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.faq-item.active{
+
+    border-color:#93c5fd;
+
+}
+
+.faq-item.active .faq-question svg{
+
+    transform:rotate(180deg);
+
+}
+
+/* ========================= */
+
+@media(max-width:768px){
+
+.faq-section{
+
+padding:0 20px;
+
+}
+
+.faq-header h2{
+
+font-size:34px;
+
+}
+
+.faq-question{
+
+padding:20px;
+
+}
+
+.faq-question span{
+
+font-size:16px;
+
+}
+
+.faq-answer p{
+
+padding:0 20px 20px;
+
+}
+
+}
+
+
+.info-section{
+
+    max-width:1450px;
+
+    margin:40px auto 70px;
+
+    padding:0 70px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:32px;
+
+    align-items:start;
+
+}
+
+.why-wrapper,
+.faq-wrapper{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:28px;
+
+    padding:38px;
+
+    box-shadow:0 10px 35px rgba(15,23,42,.05);
+
+}
