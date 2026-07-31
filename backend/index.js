@@ -11,7 +11,7 @@ const userRoutes = require("./routes/userRoutes");
 
 const partnerRoutes = require("./routes/partnerRoutes");
 
-
+const { notFound, errorHandler,} = require("./middleware/errorMiddleware");
 const cors = require("cors");
 const app = express();
 
@@ -27,6 +27,8 @@ app.use("/rooms", roomRoutes);
 app.use("/", userRoutes);       
 app.use("/partners", partnerRoutes);
 
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>{
