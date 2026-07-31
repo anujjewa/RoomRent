@@ -112,4 +112,8 @@ const roomSchema = new mongoose.Schema(
   }
 );
 
+roomSchema.index({ location: 1 });
+roomSchema.index({ category: 1 });
+roomSchema.index({ price: 1 });
+
 module.exports = mongoose.model("Room", roomSchema);
