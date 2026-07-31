@@ -5,6 +5,12 @@ const express = require("express");
 
 const router = express.Router();
 
+const validateRequest = require("../middleware/validation/validateRequest");
+
+const {
+    roomValidation,
+} = require("../middleware/validation/roomValidation");
+
 const {
     getRooms,
     getRoomById,
@@ -28,7 +34,14 @@ router.patch("/:id/view", incrementRoomView);
 
 router.get("/:id", getRoomById);
 
-router.post("/", protect, authorizeRole("owner"), createRoom);
+router.post(
+    "/",
+    protect,
+    authorizeRole("owner"),
+    roomValidation,
+    validateRequest,
+    createRoom
+);
 
 router.put(
     "/:id",

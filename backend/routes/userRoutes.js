@@ -7,6 +7,13 @@ const protect = require(
     "../middleware/authMiddleware"
 );
 
+const validateRequest = require("../middleware/validation/validateRequest");
+
+const {
+    registerValidation,
+    loginValidation,
+} = require("../middleware/validation/userValidation");
+
 
 const {
 
@@ -33,16 +40,17 @@ const {
 
 router.post(
     "/register",
+    registerValidation,
+    validateRequest,
     registerUser
 );
 
-
 router.post(
     "/login",
+    loginValidation,
+    validateRequest,
     loginUser
 );
-
-
 /* =========================================================
    USER PROFILE ROUTES
 ========================================================= */

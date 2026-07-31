@@ -4,6 +4,12 @@ const express = require("express");
 
 const upload = require("../middleware/upload");
 
+const validateRequest = require("../middleware/validation/validateRequest");
+
+const {
+    partnerValidation,
+} = require("../middleware/validation/partnerValidation");
+
 const {
   createPartner,
   getPartners,
@@ -83,10 +89,10 @@ router.post(
   protect,
   authorizeRole("renter"),
   upload.single("image"),
+  partnerValidation,
+  validateRequest,
   createPartner
 );
-
-
 /* =========================================================
    UPDATE MY PARTNER PROFILE
 ========================================================= */
